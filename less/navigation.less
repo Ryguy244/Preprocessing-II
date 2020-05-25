@@ -4,11 +4,20 @@
     padding-top: 1rem;
     font-size: 1.6rem;
     margin-bottom: 3rem;
+    @media @mobile {
+        margin-bottom: 2rem;
+    }
     .links {
         display: flex;
         justify-content: space-evenly;
         padding: 0rem 1rem 1rem 1rem;
         text-decoration: none;
         color: black;
+        @media @mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: space-between;
+            padding: 0rem 3.5rem 0rem 3.5rem;
+        }
     }
 }
