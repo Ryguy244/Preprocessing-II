@@ -1,5 +1,14 @@
-.home {
+.head {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 
+.home {
+  .introContent {
+    padding-top: 1.5rem;
+    border-bottom: 2px dashed @navigation-border;
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +65,16 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn(@eastern-blue, @white, @padbut, @tAlign,@tDecoration, @fSize, @bRadius) {
+        background-color: @eastern-blue;
+        color: @white;
+        padding: @padbut;
+        text-align: @tAlign;
+        text-decoration: @tDecoration;
+        font-size: @fSize;
+        border-radius: @bRadius;
+    }
+
     }
   }
 }// home
