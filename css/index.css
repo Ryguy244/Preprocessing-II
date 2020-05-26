@@ -300,6 +300,13 @@ img {
   padding-bottom: 3rem;
   border-bottom: 0.2rem dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -338,15 +345,18 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 .home .content-pick .destination {
-  width: 30%;
+  width: 27%;
   margin-bottom: 3rem;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 60%;
+    width: 75%;
   }
 }
 .home .content-pick .destination .btn {
@@ -354,9 +364,9 @@ img {
   color: #FFFFFF;
   padding: 1rem;
   text-align: center;
+  text-decoration: none;
   font-size: 1.6rem;
   border-radius: 1.2rem;
-  width: 15rem;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {

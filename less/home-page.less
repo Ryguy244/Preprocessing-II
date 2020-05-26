@@ -87,7 +87,9 @@
     padding-bottom: 3rem;
     border-bottom: .2rem dashed @navigation-border;
     @media @mobile {
-
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
     }
 
     .text-content {
@@ -127,36 +129,19 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
     }
     .destination {
-      width: 30%;
+      width: 27%;
       margin-bottom: 3rem;
       @media @mobile {
-      width: 60%;
+      width: 75%;
       }
       .btn {
-        background-color: @eastern-blue;
-        color: @white;
-        padding: @padbut;
-        text-align: @tAlign;
-        font-size: @fSize;
-        border-radius: @bRadius;
-        width: 15rem;
-        @media @mobile {
-          width: 100%;
-        }
-
+        .btnTwo(@eastern-blue, @white, @padbut, @tAlign,@tDecoration, @fSize, @bRadius)
       }
-      // .btn(@eastern-blue, @white, @padbut, @tAlign,@tDecoration, @fSize, @bRadius) {
-      //   background-color: @eastern-blue;
-      //   color: @white;
-      //   padding: @padbut;
-      //   text-align: @tAlign;
-      //   text-decoration: @tDecoration;
-      //   font-size: @fSize;
-      //   border-radius: @bRadius;
-      // }
-
     }
   }
 }// home
