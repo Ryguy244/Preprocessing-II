@@ -1,1 +1,13 @@
-// Mixins in here
+.btnTwo(@eastern-blue, @white, @padbut, @tAlign,@tDecoration, @fSize, @bRadius) {
+    background-color: @eastern-blue;
+    color: @white;
+    padding: @padbut;
+    text-align: @tAlign;
+    text-decoration: @tDecoration;
+    font-size: @fSize;
+    border-radius: @bRadius;
+    @media @mobile {
+        width: 100%;
+    }
+}
+

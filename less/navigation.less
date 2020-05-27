@@ -1,1 +1,25 @@
-// Navigation Styles here
+.navi {
+    display: flex;
+    align-items: baseline;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    @media @mobile {
+        padding-bottom: 1.2rem;
+        border-bottom: .2rem dashed @navigation-border;
+        margin-bottom: 0rem;
+    }
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0rem 1rem 1rem 1rem;
+        text-decoration: none;
+        color: black;
+        @media @mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: space-between;
+            padding: 0rem 3.5rem 0rem 3.5rem;
+        }
+    }
+}
